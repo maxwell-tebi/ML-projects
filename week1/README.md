@@ -1,26 +1,18 @@
-# Neural Signal Feature Engineering
+# Olympic Trophy Prediction Model
+A machine learning project that uses linear regression to estimate the number of trophies/medals an athletic team will win in the next Olympic Games.
 
-# Central Question
-How can we efficiently extract meaningful features from neural activity over time?
+## Description
+This model leverages historical performance data to find the linear relationship between specific team variables and their final medal counts. It is built using the Scikit-learn library in Python.
 
-# Algorithms Used
-- Arrays
-- Prefix sums
-- Sliding window
-- Dynamic programming (basic)
+## Features
+1. Data cleaning and normalization for historical Olympic datasets.
 
-# Methods
-I model neural firing rates as time-series data. Using sliding windows, I extract
-local temporal features. Prefix sums are used to optimize cumulative computations.
-Dynamic programming is applied to segment the signal into optimal intervals.
+2. Linear regression implementation via Scikit-learn.
 
-# Key Result
-Efficient feature extraction reveals temporal structure in neural activity while
-reducing computational cost.
+3. Evaluation metrics including Mean Squared Error (MSE) and R-squared.
 
-# Limitations
-- Synthetic data only
-- No noise modeling yet
-
-# Next Step
-Apply the same pipeline to real neural recordings and compare robustness.
+## Tech Stack
+Python
+Scikit-learn
+Pandas
+NumPy
